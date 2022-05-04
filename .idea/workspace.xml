@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e5c42035-688b-4505-9a5b-ff94fd9e44f6" name="Changes" comment="updated for heroku">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/botapi/TelegramMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/appconfig/BotConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/appconfig/BotConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/botapi/TelegramBasis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/botapi/replyKeyboard/KeyboardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/botapi/replyKeyboard/KeyboardUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/cache/DataCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/cache/DataCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/cache/UserDataCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/cache/UserDataCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/controller/WebHookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/controller/WebHookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/entity/UserProfileData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/entity/UserProfileData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/gymnasticTelegramBot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/repository/UsersProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/repository/UsersProfileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/service/SendReminderFromDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/service/UsersProfileDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/service/UsersProfileDataServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mywizard_bot" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mywizard_bot" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2753U3WygcMRW3LWmLGlbdTRkCm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql&#10;mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.home.gymnastic_bot.botapi" />
+      <recent name="ru.home.gymnastic_bot.usersProfile" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GymnasticBotApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="gymnastic_botNew-master" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="gymnastic_botNew-master" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GymnasticBotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mywizard_bot.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.home.gymnastic_bot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.home.gymnastic_bot.GymnasticBotApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyWizardBotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mywizard_bot.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.home.mywizard_bot.MyWizardBotApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GymnasticBotApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5c42035-688b-4505-9a5b-ff94fd9e44f6" name="Changes" comment="" />
+      <created>1648596137890</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648596137890</updated>
+      <workItem from="1648596141224" duration="5675000" />
+      <workItem from="1648634159579" duration="5110000" />
+      <workItem from="1648652980248" duration="4402000" />
+      <workItem from="1648668824241" duration="5300000" />
+      <workItem from="1648674466031" duration="4403000" />
+      <workItem from="1648714889993" duration="12038000" />
+      <workItem from="1648806756860" duration="2789000" />
+      <workItem from="1648851983440" duration="2488000" />
+      <workItem from="1649012744714" duration="6421000" />
+      <workItem from="1649022703315" duration="893000" />
+      <workItem from="1649077794750" duration="17819000" />
+      <workItem from="1649127399963" duration="1931000" />
+      <workItem from="1650031521841" duration="9607000" />
+      <workItem from="1650101526963" duration="844000" />
+      <workItem from="1650197552047" duration="17000" />
+      <workItem from="1651499157942" duration="23562000" />
+      <workItem from="1651604330340" duration="12993000" />
+      <workItem from="1651628655511" duration="2214000" />
+      <workItem from="1651671096894" duration="3155000" />
+      <workItem from="1651677387242" duration="335000" />
+      <workItem from="1651678774370" duration="138000" />
+      <workItem from="1651678929485" duration="791000" />
+      <workItem from="1651695779086" duration="9498000" />
+    </task>
+    <task id="LOCAL-00001" summary="updated for heroku">
+      <created>1651677567370</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651677567370</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="updated for heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated for heroku" />
+  </component>
+</project>

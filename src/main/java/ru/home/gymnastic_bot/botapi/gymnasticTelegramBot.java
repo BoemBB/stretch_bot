@@ -1,4 +1,4 @@
-package ru.home.gymnastic_bot;
+package ru.home.gymnastic_bot.botapi;
 
 import lombok.SneakyThrows;
 import org.apache.commons.io.FileUtils;
@@ -11,22 +11,26 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendVideo;
 import org.telegram.telegrambots.meta.api.objects.InputFile;
 import org.telegram.telegrambots.meta.api.objects.Update;
-import ru.home.gymnastic_bot.botapi.TelegramBasis;
 
 import java.io.File;
 import java.io.InputStream;
 
 public class gymnasticTelegramBot extends TelegramWebhookBot {
+
     private String webHookPath;
     private String botUserName;
     private String botToken;
 
-    private final TelegramBasis telegramBasis;
+    private final TelegramMain telegramMain;
 
-
-    public gymnasticTelegramBot(DefaultBotOptions botOptions, TelegramBasis telegramBasis) {
+    public gymnasticTelegramBot(DefaultBotOptions botOptions, TelegramMain telegramMain) {
         super(botOptions);
-        this.telegramBasis = telegramBasis;
+        this.telegramMain = telegramMain;
+    }
+
+    @Override
+    public BotApiMethod<?> onWebhookUpdateReceived(Update update) {
+        return telegramMain.handleUpdate(update);
     }
 
     @Override
@@ -42,11 +46,6 @@ public class gymnasticTelegramBot extends TelegramWebhookBot {
     @Override
     public String getBotPath() {
         return webHookPath;
-    }
-
-    @Override
-    public BotApiMethod<?> onWebhookUpdateReceived(Update update) {
-        return telegramBasis.handleUpdate(update);
     }
 
     public void setWebHookPath(String webHookPath) {
@@ -72,6 +71,7 @@ public class gymnasticTelegramBot extends TelegramWebhookBot {
         SendVideo sendVideo = setVideo(chatId, videoPath);
         sendVideo.setCaption(videoCaption);
         execute(sendVideo);
+        //uncomment if using local version
         /*File video = ResourceUtils.getFile("classpath:" + videoPath);
         SendVideo sendVideo = new SendVideo();
         sendVideo.setVideo(new InputFile(video));
@@ -84,6 +84,7 @@ public class gymnasticTelegramBot extends TelegramWebhookBot {
     public void sendVideo(String chatId, String videoPath) {
         SendVideo sendVideo = setVideo(chatId, videoPath);
         execute(sendVideo);
+        //uncomment if using local version
         /*File video = ResourceUtils.getFile("classpath:" + videoPath);
         SendVideo sendVideo = new SendVideo();
         sendVideo.setVideo(new InputFile(video));
@@ -96,9 +97,11 @@ public class gymnasticTelegramBot extends TelegramWebhookBot {
         File file = File.createTempFile("temp", "file");
         InputStream inputStream = new ClassPathResource("classpath:" + videoPath).getInputStream();
         FileUtils.copyInputStreamToFile(inputStream, file);
+
         SendVideo sendVideo = new SendVideo();
         sendVideo.setVideo(new InputFile(file));
         sendVideo.setChatId(chatId);
+
         return sendVideo;
     }
 

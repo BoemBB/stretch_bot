@@ -1,18 +1,18 @@
-package ru.home.gymnastic_bot.service;
+package ru.home.gymnastic_bot.botapi;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import ru.home.gymnastic_bot.cache.UserDataCache;
 import ru.home.gymnastic_bot.entity.UserProfileData;
-import ru.home.gymnastic_bot.gymnasticTelegramBot;
 
-import java.util.*;
+import java.util.Map;
+import java.util.Random;
 
 @Slf4j
-@Service
+@Component
 @EnableScheduling
 public class SendReminderFromDB {
 
@@ -26,31 +26,37 @@ public class SendReminderFromDB {
 
     @Scheduled(cron = "0 0 12 * * ?", zone = "GMT+3:00")
     private void startScheduleAt12(){
-        sendReminderToAll();
+        sendTheReminderToAll();
     }
 
 
     @Scheduled(cron = "0 0 18 * * ?", zone = "GMT+3:00")
     private void startScheduleAt18(){
-        sendReminderToAll();
+        sendTheReminderToAll();
     }
 
-    private void sendReminderToAll(){
+    private void sendTheReminderToAll(){
+        log.info("try to send the reminder to all");
         Map<Long, UserProfileData> users = userDataCache.getUsers();
         if (!users.isEmpty()){
-            for (Map.Entry<Long, UserProfileData> user: users.entrySet()
-                 ) {
+            for (Map.Entry<Long, UserProfileData> user: users.entrySet()) {
+
                 String chatId = user.getValue().getChatId();
 
-                Random rnd = new Random();
-                int b = rnd .nextInt(100);
-                if (b < 50)
-                    gymnasticTelegramBot.sendVideo(chatId,"videos/reminder1.mp4");
-                else
-                    gymnasticTelegramBot.sendVideo(chatId,"videos/reminder2.mp4");
+                Random random = new Random();
+                int random50percent = random.nextInt(100);
+                if (random50percent < 50) {
+                    gymnasticTelegramBot.sendVideo(chatId, "videos/reminder1.mp4");
+                } else {
+                    gymnasticTelegramBot.sendVideo(chatId, "videos/reminder2.mp4");
+                }
+
                 gymnasticTelegramBot.sendReminder(chatId, "Пора сделать разминку");
             }
         }
+
+        log.info("Reminders were sent");
+
     }
 
     /*@SneakyThrows
@@ -84,20 +90,6 @@ public class SendReminderFromDB {
                             }
                         }, java.sql.Timestamp.valueOf(localDateTime));
                     }
-                }
-            }
-        }
-    }
-
-    @PreDestroy
-    public void destroyMethod() {
-        if (profileDataService.getAllProfiles() != null) {
-            for (UserProfileData profileData : profileDataService.getAllProfiles()
-            ) {
-                if (profileData.getLocalDateTime() != null) {
-                    log.info("upgrade date");
-                    LocalDateTime localDateTime = profileData.getLocalDateTime().plusDays(1);
-                    profileData.setLocalDateTime(localDateTime);
                 }
             }
         }

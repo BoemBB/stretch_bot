@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.telegram.telegrambots.bots.DefaultBotOptions;
-import ru.home.gymnastic_bot.botapi.TelegramBasis;
-import ru.home.gymnastic_bot.gymnasticTelegramBot;
+import ru.home.gymnastic_bot.botapi.TelegramMain;
+import ru.home.gymnastic_bot.botapi.gymnasticTelegramBot;
 
 
 @Setter
@@ -21,19 +21,21 @@ public class BotConfig {
     private String botUserName;
     private String botToken;
 
+    //uncomment if using local version
     /*private DefaultBotOptions.ProxyType proxyType;
     private String proxyHost;
     private int proxyPort;*/
 
     @Bean
-    public gymnasticTelegramBot myGymnasticTelegramBot(TelegramBasis telegramBasis) {
+    public gymnasticTelegramBot myGymnasticTelegramBot(TelegramMain telegramMain) {
         DefaultBotOptions options = new DefaultBotOptions();
 
+        //uncomment if using local version
         /*options.setProxyHost(proxyHost);
         options.setProxyPort(proxyPort);
         options.setProxyType(proxyType);*/
 
-        gymnasticTelegramBot myGymnasticTelegramBot = new gymnasticTelegramBot(options, telegramBasis);
+        gymnasticTelegramBot myGymnasticTelegramBot = new gymnasticTelegramBot(options, telegramMain);
         myGymnasticTelegramBot.setBotUserName(botUserName);
         myGymnasticTelegramBot.setBotToken(botToken);
         myGymnasticTelegramBot.setWebHookPath(webHookPath);

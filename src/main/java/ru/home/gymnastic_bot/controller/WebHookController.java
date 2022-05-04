@@ -3,7 +3,7 @@ package ru.home.gymnastic_bot.controller;
 import org.springframework.web.bind.annotation.*;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.objects.Update;
-import ru.home.gymnastic_bot.gymnasticTelegramBot;
+import ru.home.gymnastic_bot.botapi.gymnasticTelegramBot;
 
 
 @RestController

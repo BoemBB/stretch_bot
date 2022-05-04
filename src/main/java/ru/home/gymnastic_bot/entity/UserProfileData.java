@@ -24,21 +24,15 @@ public class UserProfileData {
     String typeOfLive;
     String messages;
     int age;
-    int changeNeck = 0;
-    int changeBack = 0;
+    boolean hasSentTheFirstPartOfTheVideoForTheNeck = false;
+    boolean hasSentTheFirstPartOfTheVideoForTheBack = false;
 
-    public void changeRandomNeck(){
-        if (changeNeck % 2 == 0){
-            changeNeck = 0;
-        }
-        changeNeck++;
+    public void changeVideosForNeck(){
+        setHasSentTheFirstPartOfTheVideoForTheNeck(!hasSentTheFirstPartOfTheVideoForTheNeck);
     }
 
-    public void changeRandomBack(){
-        if (changeBack % 2 == 0){
-            changeBack = 0;
-        }
-        changeBack++;
+    public void changeVideosForBack(){
+        setHasSentTheFirstPartOfTheVideoForTheBack(!hasSentTheFirstPartOfTheVideoForTheBack);
     }
 
     public void addMessage(String message){
@@ -109,4 +103,3 @@ public class UserProfileData {
     }
 }
 */
-
