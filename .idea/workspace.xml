@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c42035-688b-4505-9a5b-ff94fd9e44f6" name="Changes" comment="updated for heroku">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/botapi/TelegramMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/appconfig/BotConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/appconfig/BotConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/botapi/TelegramBasis.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/botapi/replyKeyboard/KeyboardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/botapi/replyKeyboard/KeyboardUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/cache/DataCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/cache/DataCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/cache/UserDataCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/cache/UserDataCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/controller/WebHookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/controller/WebHookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/entity/UserProfileData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/entity/UserProfileData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/gymnasticTelegramBot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/repository/UsersProfileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/repository/UsersProfileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/service/SendReminderFromDB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/service/UsersProfileDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/service/UsersProfileDataServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/botapi/SendReminderFromDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/home/gymnastic_bot/botapi/SendReminderFromDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +153,8 @@
       <workItem from="1651677387242" duration="335000" />
       <workItem from="1651678774370" duration="138000" />
       <workItem from="1651678929485" duration="791000" />
-      <workItem from="1651695779086" duration="9498000" />
+      <workItem from="1651695779086" duration="10121000" />
+      <workItem from="1651715805947" duration="628000" />
     </task>
     <task id="LOCAL-00001" summary="updated for heroku">
       <created>1651677567370</created>

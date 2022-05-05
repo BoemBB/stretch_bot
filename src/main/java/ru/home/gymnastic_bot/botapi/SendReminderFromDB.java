@@ -58,40 +58,4 @@ public class SendReminderFromDB {
         log.info("Reminders were sent");
 
     }
-
-    /*@SneakyThrows
-    @Override
-    public void afterPropertiesSet() {
-        if (profileDataService.getAllProfiles() != null) {
-            for (UserProfileData profileData : profileDataService.getAllProfiles()
-            ) {
-                if (profileData.getLocalDateTime() != null) {
-                    log.info("try to send a reminder");
-                    String chatId = profileData.getChatId();
-                    LocalDateTime localDateTime = profileData.getLocalDateTime().minusHours(1);
-                    if (profileData.getLocalDateTime() != null){
-                        log.info("in if statement");
-                        Timer timer = new Timer();
-                        timer.schedule(new TimerTask() {
-                            @Override
-                            public void run() {
-
-                                Random rnd = new Random();
-                                int b = rnd .nextInt(100);
-                                if (b < 33)
-                                    gymnasticTelegramBot.sendVideo(chatId,"videos/reminder1.mp4");
-                                else if (b < 66)
-                                    gymnasticTelegramBot.sendVideo(chatId,"videos/reminder2.mp4");
-                                else
-                                    gymnasticTelegramBot.sendVideo(chatId,"videos/reminder1.mp4");
-
-                                gymnasticTelegramBot.sendReminder(chatId, "Пора сделать разминку");
-
-                            }
-                        }, java.sql.Timestamp.valueOf(localDateTime));
-                    }
-                }
-            }
-        }
-    }*/
 }
