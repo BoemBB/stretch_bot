@@ -1,3 +1,4 @@
 # stretch_bot
-telegram bot in java
 to use go here @gymnastic_test_bot
+the main functionality is in the botapi package
+technologies used in the project: Spring, Spring Boot, Spring REST, MongoDB Cloud, MySQL
